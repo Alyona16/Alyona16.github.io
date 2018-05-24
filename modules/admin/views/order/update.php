@@ -1,0 +1,18 @@
+<?php
+
+use yii\helpers\Html;
+
+$this->title = 'Редактирование заказа: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Заказы', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = 'Сохранить';
+?>
+<div class="order-update">
+
+    <h1>Редактирование заказа №<?= $model->id ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
